@@ -1,0 +1,13 @@
+.progress-bar-container{
+    display: flex;
+    justify-content:end;
+    gap:12px;
+    margin-top:80px;
+}
+.progress-bar{
+    width:20%;
+    height: 12px;
+    flex-grow: 1;
+    border-radius: 2px;
+    
+}
