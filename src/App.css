@@ -1,5 +1,38 @@
 body{
-  background-color: rgba(204, 196, 186, 1);
+  background-color:  #ECE9E5;;
   margin:0;
   padding: 0;
+}
+.App{
+  display: grid;
+  height:100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 80px;
+  grid-template-areas: 
+    "progress progress progress progress"
+    "contain contain contain preview"
+    "foot foot foot foot";
+}
+.details-container{
+  grid-area: contain;
+}
+
+.progress-bar-container{
+  grid-area: progress;
+}
+
+.footer{
+  grid-area: foot;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 24px;
+  background-color: #FFFFFF;
+  ;
+}
+
+.form-preview{
+  grid-area: preview;
+  padding:20px;
 }

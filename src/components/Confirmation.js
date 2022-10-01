@@ -1,10 +1,38 @@
 import React from 'react'
 import BackButtonComponent from './BackButtonComponent'
+import '../confirmation.css'
 function Confirmation() {
   return (
-    <div>Confirmation
-    <br></br>
-    <BackButtonComponent />
+      <div className='confirmation-container'>
+        
+        <BackButtonComponent />
+        <br></br>
+        <div className='confirmation'>
+        <div className='eachComponent'>
+            <span>Plan selected</span>
+            <span>One</span>
+        </div>
+        <div className='eachComponent'>
+            <span>Plan selected</span>
+            <span>One</span>
+        </div>
+        <div className='eachComponent'>
+            <span>Plan selected</span>
+            <span>One</span>
+        </div>
+        <div className='eachComponent'>
+            <span>Plan selected</span>
+            <span>One</span>
+        </div>
+        <div className='eachComponent'>
+            <span>Plan selected</span>
+            <span>One</span>
+        </div>
+        <div className='eachComponent'>
+            <span>Plan selected</span>
+            <span>One</span>
+        </div>
+    </div>
     </div>
   )
 }

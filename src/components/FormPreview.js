@@ -5,7 +5,6 @@ import stateContext from '../stateContext'
 function FormPreview() {
     const state = useContext(stateContext)
   return (
-    
     <>
     <div className='form-preview'>
 

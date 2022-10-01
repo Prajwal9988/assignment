@@ -28,16 +28,13 @@ function App() {
        
         <stateContext.Provider value={state}>
         <dispatchContext.Provider value={dispatch}>
-          
-            <ProgressBar />
-            {state.progress === 1 ? <Details /> : ''}
+            <ProgressBar className='progress-bar-container'/>
+            {state.progress === 1 ? <Details className='details-container' /> : ''}
             {state.progress === 2 ? <Payment /> : ''}
             {state.progress === 3 ? <Declaration />: ''}
             {state.progress === 4 ? <Confirmation /> : ''}
-            <FormPreview />
-            <Footer />
-   
-  
+            {state.progress === 4 ? '' : <FormPreview className='form-preview'/>}
+            <Footer className='footer'/>
         </dispatchContext.Provider>
         </stateContext.Provider>
       </div> 

@@ -6,7 +6,7 @@
 }
 .progress-bar{
     width:20%;
-    height: 12px;
+    height: 8px;
     flex-grow: 1;
     border-radius: 2px;
     

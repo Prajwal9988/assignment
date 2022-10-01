@@ -3,9 +3,7 @@ import React from 'react'
 function Details() {
   return (
     <>
-    
      <div>
-        
         <span> Hello Anisha, 
             Increase yours and your familys health insurance cover by 20 lakhs
         </span>
@@ -21,7 +19,7 @@ function Details() {
 const PlanDetails = ()=>{
   
     return (
-        <>
+        <div className='details-container'>
         <span>Plan Details</span>    
         <label>Your plan type</label>
         <br></br>
@@ -31,7 +29,7 @@ const PlanDetails = ()=>{
             <option value={'Self and Parents'}>Self parents</option>
             </select>
         <br></br>   
-        </>
+        </div>
     )
 }
 

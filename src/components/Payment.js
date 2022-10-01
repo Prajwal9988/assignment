@@ -6,6 +6,7 @@ function Payment() {
       <span>Payments Page</span>
       <br></br>
       <BackButtonComponent />
+      <input type={'range'}></input>
     </div>
   )
 }

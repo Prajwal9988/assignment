@@ -1,0 +1,10 @@
+.back-button{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border-width: 0;
+    background-color: #E5E1DC;
+    margin-left: 256px;
+    margin-bottom: 24px;
+    margin-top: 44px;
+}
