@@ -4,6 +4,6 @@ export const headings = [
     'Mobile number',
     'Address line 01',
     'Address line 02',
-    'Picode',
+    'Pincode',
     'State' 
 ]

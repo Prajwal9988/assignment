@@ -20,7 +20,9 @@ const init={
   pin: '',
   state: '',
   errors:{},
-  plan: ''
+  plan: '',
+  ready: false,
+  range: 0,
 }
 function App() {
   const [state, dispatch] = useReducer(reducerFunction, init)

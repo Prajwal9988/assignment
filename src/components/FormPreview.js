@@ -6,7 +6,7 @@ import { data, headings } from '../constants'
 
 
 function FormPreview() {
-  const state = useContext(stateContext)  
+  const state = useContext(stateContext)
   return (
     <div className='form-preview'>
     <PreviewItem>
@@ -19,7 +19,7 @@ function FormPreview() {
         {
           data.map((data,i)=>{
             return(
-              <FormatText key={i} fieldName ={headings[i]} stateVariables={state[data]}></FormatText>
+              <FormatText key={i} fieldName ={headings[i]} stateVariables={state[data]} ready={state.ready}></FormatText>
             )
           })
         }
@@ -29,11 +29,11 @@ function FormPreview() {
 }
 
 
-function FormatText({stateVariables, fieldName}){
+function FormatText({stateVariables, fieldName, ready}){
   return(
     <Text>
       <span>{fieldName}</span>
-      <Text2 className='preview-font'>{stateVariables ? stateVariables : '-'}</Text2>
+      <Text2 className='preview-font'>{stateVariables && ready ? stateVariables : '-'}</Text2>
     </Text>
   ) 
 }

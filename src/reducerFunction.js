@@ -20,6 +20,10 @@ function reducerFunction(State, action){
                return {...State, errors: action.value}
         case 'SELECTOR':
                return {...State, plan: action.value}
+        case 'PREVIEW':
+               return {...State, ready: action.value}
+        case 'SLIDER':
+               return {...State, range: action.value}
         default:
           {}
      }

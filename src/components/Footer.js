@@ -13,6 +13,7 @@ function nextButtonClick(e, stateChange, state){
         console.log("Reached")
         stateChange({type: 'INCREASE_PROGRESS'})
         stateChange({type: 'ERRORS', value: {}})
+        stateChange({type: 'PREVIEW', value: true})
       }
       else{
         stateChange({type: 'ERRORS', value: res})

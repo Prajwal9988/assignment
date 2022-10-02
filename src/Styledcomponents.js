@@ -2,10 +2,11 @@ import styled from 'styled-components'
 
 export const TopHeading = styled.div`
 font-size: 32px;
-width: 319px;
+width: 100%;
 height: 38px;
 font-weight: 700;
 color: #182639;
+align-self:center;
 `
 
 export const Paragraph = styled.div`
