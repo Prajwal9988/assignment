@@ -2,9 +2,9 @@ import React from 'react'
 import BackButtonComponent from './BackButtonComponent'
 import '../confirmation.css'
 function Confirmation() {
+    /* Remove all the deuplicates and create a seperate component */
   return (
       <div className='confirmation-container'>
-        
         <BackButtonComponent />
         <br></br>
         <div className='confirmation'>

@@ -2,19 +2,32 @@ body{
   background-color:  #ECE9E5;;
   margin:0;
   padding: 0;
+  font-family: 'Inter';
+  font-style: normal;
 }
 .App{
   display: grid;
-  height:100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:8px;
+  height: 100vh;
+  grid-template-columns: 160px 2fr 412px 160px;
   grid-template-rows: 80px 1fr 80px;
   grid-template-areas: 
     "progress progress progress progress"
-    "contain contain contain preview"
+    " . ct pr . "
     "foot foot foot foot";
 }
+
 .details-container{
-  grid-area: contain;
+  margin-top:52px;
+  grid-area: ct;
+}
+
+.payments-container{
+  grid-area: ct;
+}
+
+.declaration-container{
+  grid-area: ct;
 }
 
 .progress-bar-container{
@@ -22,6 +35,8 @@ body{
 }
 
 .footer{
+  position: sticky;
+  top: 0;
   grid-area: foot;
   display: flex;
   flex-direction: column;
@@ -33,6 +48,11 @@ body{
 }
 
 .form-preview{
-  grid-area: preview;
+  grid-area: pr;
   padding:20px;
 }
+
+.error{
+  color: #E06358;
+}
+

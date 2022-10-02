@@ -3,9 +3,8 @@ import BackButtonComponent from './BackButtonComponent'
 
 function Declaration() {
   return (
-    <div>
-      <span>Declaration</span>
-      <br></br>
+    <div className='declaration-container'>
+  
       <BackButtonComponent />
       <br></br>
       <input type={'checkbox'}></input>

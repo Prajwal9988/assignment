@@ -1,5 +1,4 @@
 import './App.css';
-import styled from 'styled-components'
 import Details from './components/Details';
 import Payment from './components/Payment';
 import Declaration from './components/Declaration';
@@ -19,7 +18,9 @@ const init={
   address1: '',
   address2: '',
   pin: '',
-  state: ''
+  state: '',
+  errors:{},
+  plan: ''
 }
 function App() {
   const [state, dispatch] = useReducer(reducerFunction, init)
@@ -28,13 +29,13 @@ function App() {
        
         <stateContext.Provider value={state}>
         <dispatchContext.Provider value={dispatch}>
-            <ProgressBar className='progress-bar-container'/>
-            {state.progress === 1 ? <Details className='details-container' /> : ''}
-            {state.progress === 2 ? <Payment /> : ''}
-            {state.progress === 3 ? <Declaration />: ''}
-            {state.progress === 4 ? <Confirmation /> : ''}
-            {state.progress === 4 ? '' : <FormPreview className='form-preview'/>}
-            <Footer className='footer'/>
+            <ProgressBar className='progress-bar-container' />
+            {state.progress !== 1 ? '' : <Details/>}
+            {state.progress !== 2 ? '' : <Payment/>}
+            {state.progress !== 3 ? '' : <Declaration/>}
+            {state.progress !== 4 ? '' : <Confirmation/>}
+            {state.progress === 4 ? '' : <FormPreview />}
+            {state.progress === 4 ? '' : <Footer/>}  
         </dispatchContext.Provider>
         </stateContext.Provider>
       </div> 

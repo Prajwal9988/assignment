@@ -1,0 +1,124 @@
+
+.plan-accordion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 56px;  
+    box-shadow: inset 0px -1px 0px #E1E5EB;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.plan-details-container{
+    display: flex;
+    flex-direction: column;
+}
+.plan-accordion-bottom{
+    display: flex;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 106px;
+    box-shadow: inset 0px -1px 0px #E1E5EB;
+    border-radius: 0px 0px 10px 10px;
+} 
+.selector-size{
+    width: 100%;
+    border: 1px solid #8C98AB;
+    border-radius: 6px;
+}
+.drop-down-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 48px;
+    
+    align-self: flex-end;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+.inner-dropdown{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.basic-details-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.basic-accordion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 56px;  
+    box-shadow: inset 0px -1px 0px #E1E5EB;
+    border-radius: 10px 10px 0px 0px;
+}
+.basic-accordion-bottom{
+    display: flex;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 302px;
+    box-shadow: inset 0px -1px 0px #E1E5EB;
+    border-radius: 0px 0px 10px 10px;
+    
+} 
+.flexify{
+    display: flex;
+    flex-direction: column;
+    padding:16px;
+    margin-left:4px;
+    
+}
+.input-components{
+    display: grid;
+    width: 100%;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+     "email phone"
+     "add1 add2"
+     "pin state";
+}
+.email{
+  grid-area: email;
+  width: 336px;
+  height: 60px;
+
+}
+.phone{
+  grid-area: phone;
+  width: 336px;
+  height: 60px;
+
+}
+.address1{
+  grid-area: add1;
+  width: 336px;
+  height: 60px;
+
+}
+.address2{
+  grid-area: add2;
+  width: 336px;
+  height: 60px;
+
+}
+.pin{
+  grid-area: pin;
+  width: 336px;
+  height: 60px;
+
+}
+.state{
+  grid-area: state;
+  width: 336px;
+  height: 60px;
+
+}
